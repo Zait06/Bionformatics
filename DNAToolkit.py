@@ -33,3 +33,6 @@ def transcription(seq):
 
 def reverseComplement(seq):
     return ''.join([reverse_complement[nuc] for nuc in seq])[::-1]
+
+def gcContent(seq):
+    return (float(seq.count("C")+seq.count("G"))/float(len(seq)))*100
